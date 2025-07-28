@@ -1,0 +1,65 @@
+.search-btn {
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input {
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    border-bottom: 1px solid rgb(170, 169, 169);
+    border-right: 1px solid rgb(165, 164, 164);
+}
+
+#search-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+header div input {
+    margin-right: 10px;
+}
+
+.search-btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+ul#blogs {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+ul#blogs li {
+    margin-top: 0px;
+    /* border-top: 1px solid gray;
+    border-bottom: 1px solid gray; */
+}
+
+ul#blogs a {
+    color: black;
+}
+
+ul#blogs a:hover {
+    background-color: black;
+    color: white;
+}
+
+.blog-title {
+    font-weight: 600;
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #555;
+}

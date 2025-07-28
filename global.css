@@ -23,6 +23,18 @@ nav {
     padding-right: 5px;
 }
 
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.year-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -54,6 +66,12 @@ section {
     margin-top: 15px;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+    margin-top: 10px;
+}
 
 ::selection {
   color: white; 

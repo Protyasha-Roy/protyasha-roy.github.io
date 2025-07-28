@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 95%;
+    margin: 5px auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.bg-blue {
+    background-color: blue;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    background-color: blue;
+    color: white;
+}
+
+section {
+    margin-top: 15px;
+}
+
+
+::selection {
+  color: white; 
+  background-color: black; 
+}
+
+::-moz-selection {
+  color: white;
+  background-color: black;
+}
+
+/* Small tablets and large phones (≥ 640px) */
+@media (min-width: 640px) {
+    body {
+        width: 80%;
+    }
+}
+
+/* Medium devices / tablets (≥ 768px) */
+@media (min-width: 768px) {
+  body {
+    width: 60%;
+  }
+}
+
+/* Large devices / small laptops (≥ 1024px) */
+@media (min-width: 1024px) {
+    body {
+        width: 55%;
+    }
+}
+
+/* Extra‑large devices / desktop (≥ 1280px) */
+@media (min-width: 1280px) {
+  body {
+    width: 45%;
+  }
+}
+
+/* 2× Extra‑large / big screens (≥ 1536px) */
+@media (min-width: 1536px) {
+  body {
+    width: 35%;
+  }
+}

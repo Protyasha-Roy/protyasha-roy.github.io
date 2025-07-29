@@ -4,6 +4,13 @@ const blogFiles = [
 ];
 
 const ul = document.getElementById("blogs");
+const searchInput = document.getElementById('search');
+let metas = [];
+
+// Utility to escape special regex chars
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&');
+}
 
 async function fetchMeta(path) {
   const res  = await fetch(path);
@@ -12,35 +19,50 @@ async function fetchMeta(path) {
 
   return {
     title: doc.querySelector('meta[name="title"]')?.content  || "Untitled",
-    date:  doc.querySelector('meta[name="date"]')?.content   || "",
-    tags:  (doc.querySelector('meta[name="tags"]')?.content || "")
-              .split(",")
-              .map(t => t.trim())
-              .filter(Boolean),
     path,
   };
 }
 
-function renderItem({ title, date, tags, path }) {
+function renderItem({ title, path }) {
   const li = document.createElement("li");
-  li.innerHTML =`
-  <div class="blog-meta">
-  <time datetime="${date}">${new Date(date).toLocaleDateString()}</time>
-  <div>
-  ${tags.map(t => `<span>${t}</span>`).join(" ")}
-  </div>
-  </div>
-  <a class="blog-title" href="${path}">${title}</a>
+  li.innerHTML = `
+    <a class="blog-title" href="${path}"><div class="square"></div>${title}</a>
   `;
   return li;
 }
 
+function renderList(list, term = '') {
+  ul.innerHTML = '';
+  list.forEach(meta => {
+    let displayedTitle = meta.title;
+    if (term) {
+      const regex = new RegExp(`(${escapeRegExp(term)})`, 'gi');
+      displayedTitle = displayedTitle.replace(
+        regex,
+        '<mark style="background:black; color:white;">$1</mark>'
+      );
+    }
+    const item = renderItem({ ...meta, title: displayedTitle });
+    ul.appendChild(item);
+  });
+}
+
 (async function() {
-  const metas = await Promise.all(blogFiles.map(fetchMeta));
+  metas = await Promise.all(blogFiles.map(fetchMeta));
 
-  metas.sort((a, b) => new Date(b.date) - new Date(a.date));
+  // initial render
+  renderList(metas);
 
-  metas.forEach(meta => {
-    ul.appendChild(renderItem(meta));
+  // live search filtering
+  searchInput.addEventListener('input', () => {
+    const term = searchInput.value.trim().toLowerCase();
+    if (!term) {
+      renderList(metas);
+      return;
+    }
+    const filtered = metas.filter(meta =>
+      meta.title.toLowerCase().includes(term)
+    );
+    renderList(filtered, term);
   });
 })();

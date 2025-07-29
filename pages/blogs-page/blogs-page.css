@@ -10,7 +10,6 @@ input {
     padding-right: 2px;
     border: none;
     border-bottom: 1px solid rgb(170, 169, 169);
-    border-right: 1px solid rgb(165, 164, 164);
 }
 
 #search-nav {
@@ -19,10 +18,6 @@ input {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-}
-
-header div input {
-    margin-right: 10px;
 }
 
 .search-btn:hover {
@@ -40,8 +35,6 @@ ul#blogs {
 
 ul#blogs li {
     margin-top: 0px;
-    /* border-top: 1px solid gray;
-    border-bottom: 1px solid gray; */
 }
 
 ul#blogs a {
@@ -54,12 +47,22 @@ ul#blogs a:hover {
 }
 
 .blog-title {
-    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    gap: 5px;
+    font-weight: bold;
+    font-size: 0.7rem;
 }
 
 .blog-meta {
     display: flex;
     justify-content: space-between;
-    font-size: 0.875rem;
     color: #555;
+}
+
+.square {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(32, 32, 243);
 }

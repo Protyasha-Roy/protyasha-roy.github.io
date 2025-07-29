@@ -40,10 +40,13 @@ nav {
     align-items: center;
 }
 
+header nav ul {
+  gap: 10px;
+}
+
 ul {
     display: flex;
     flex-direction: row;
-    gap: 10px;
 }
 
 li {

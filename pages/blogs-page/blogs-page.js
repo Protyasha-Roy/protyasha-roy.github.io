@@ -1,6 +1,5 @@
 const blogFiles = [
-  "../../blogs/we-are-still-dinosaurs.html",
-  "../../blogs/never-say-never.html",
+  "../../blogs/blog-1.html",
 ];
 
 const ul = document.getElementById("blogs");

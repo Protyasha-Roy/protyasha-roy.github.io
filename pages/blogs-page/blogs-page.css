@@ -47,7 +47,7 @@ ul#blogs a:hover {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 0.7rem;
 }
 

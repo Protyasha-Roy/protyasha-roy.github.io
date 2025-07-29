@@ -40,6 +40,10 @@ nav {
     align-items: center;
 }
 
+.main-section {
+  margin-top: 5px;
+}
+
 header nav ul {
   gap: 10px;
 }
@@ -71,7 +75,7 @@ a:hover {
 }
 
 section {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 footer {

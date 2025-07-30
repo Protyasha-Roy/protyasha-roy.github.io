@@ -11,6 +11,7 @@ body{
     width: 95%;
     font-size: 0.8rem;
     margin: 5px auto;
+    text-align:justify;
 }
 
 nav {

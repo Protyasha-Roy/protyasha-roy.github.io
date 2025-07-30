@@ -32,7 +32,10 @@ nav {
     background-color: black;
     color: white;
 }
-
+.bg-blue {
+  background-color: blue;
+  color: white;
+}
 .underlined-link {
   text-decoration: underline;
 }
@@ -52,12 +55,12 @@ header nav ul {
   gap: 10px;
 }
 
-ul {
+header ul {
     display: flex;
     flex-direction: row;
 }
 
-li {
+header li {
     list-style: none;
 }
 
@@ -87,6 +90,14 @@ footer {
     flex-direction: column;
     column-gap: 5px;
     margin-top: 10px;
+}
+
+.projects-list {
+  margin: 5px 3%;
+}
+
+.projects-list ol {
+  padding: 10px;
 }
 
 ::selection {

@@ -33,6 +33,10 @@ nav {
     color: white;
 }
 
+.underlined-link {
+  text-decoration: underline;
+}
+
 .year-message {
     display: flex;
     flex-direction: row;

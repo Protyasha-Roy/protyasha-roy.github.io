@@ -1,232 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="global.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Protyasha_Roy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <style>
-        .skill-item {
-            display: flex;
-            align-items: flex-start;
-        }
+  <body id="homepage">
+    <header id="homeheader">
+      <div class="profile-img">
+        <img src="./raven-80x80.jpg" alt="doesn't exist" />
+      </div>
+      
+      <div id="socials-container">
+        <a href="https://resume.pdf">resume</a>
+        <a href="https://github.com">github</a>
+        <a href="https://x.com">x</a>
+        <a href="https://linkedin.com">linkedin</a>
+      </div>
 
-        .label {
-            min-width: 22%;
-            font-weight: bold;
-        }
+      <h1>Protyasha Roy</h1>
+      <p>
+        Undergrad at <a href="https://northsouth.edu">North South University</a>
+      </p>
 
-        .value {
-            flex: 1;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <p class="title bg-black">Protyasha_Roy</p>
-            <div>
-                <a class="underlined-link" target="_blank" href="https://github.com/Protyasha-Roy">github</a> .
-                <a class="underlined-link" target="_blank" href="https://x.com/zeenovex">x</a> .
-                <a class="underlined-link" target="_blank" href="linkedin.com">linkedin</a>
-            </div>
-            <ul>
-                <li><a href="index.html">h</a></li>
-                <li><a href="./pages/projects/projects.html">p</a></li>
-                <li><a href="./pages/blogs-page/blogs-page.html">b</a></li>
-                <li><a href="./pages/misc/misc.html">m</a></li>
-            </ul>
-        </nav>
+      <img src="./windows.png" style="width: 100%; height: 100px;" alt="windows landscape wallpaper">
     </header>
 
-    <main>
-        <section>
-            <p>
-                <strong>
-                    Undergrad @ <a target="_blank" href="https://www.northsouth.edu/">North South University</a> |
-                    Computer Science & Engineering|<a href="">Resume</a>
-                </strong>
-            </p>
+    <main></main>
 
-            <p>
-                Ambitious about solving problems.
-            </p>
-            <br>
-
-            <article>
-                <h2>Aim</h2>
-                <p>
-                    Computers are among the greatest inventions of humankind. What captivates me is their limitless
-                    potential to solve problems(and, of course, to build cool things). I aspire to harness that
-                    potential to create solutions that make a real impact in the world.
-                </p>
-                <br>
-
-                <h2>Skills</h2>
-                <p>I am skilled in the topics and tools listed below:</p>
-                <ul style="margin: 5px 5%; display: flex; flex-direction: column;">
-                    <li class="skill-item">
-                        <span class="label"><b>Languages</b></span>
-                        <span class="value">:C, C++, Javascript, Java, Python</span>
-                    </li>
-                    <li class="skill-item">
-                        <span class="label"><b>Frameworks</b></span>
-                        <span class="value">:React, Django, NextJs, Express Js</span>
-                    </li>
-                    <li class="skill-item">
-                        <span class="label"><b>Tools</b></span>
-                        <span class="value">:Linux, VS Code, Figma</span>
-                    </li>
-                    <li class="skill-item">
-                        <span class="label"><b>Topics</b></span>
-                        <span class="value">:Data structures & algorithm</span>
-                    </li>
-                    <li class="skill-item">
-                        <span class="label"><b>Contests</b></span>
-                        <span class="value">:Codeforces, Codechef, Competitive programming</span>
-                    </li>
-                </ul>
-                <p>and still learning new things..</p>
-                <br>
-
-                <h2>Projects</h2>
-                <p>Over the years, I’ve gained a solid understanding of computers and the many ways to use them
-                    effectively. Along the way, I’ve built solutions to a variety of problems. <br><br> A few selected projects
-                    are highlighted below, and you can find the full list on the <a
-                        href="./pages/projects/projects.html">Projects</a> page. I’ve also discussed the building
-                    process there in detail.</p>
-
-                <div class="projects-list">
-                    <h3>Research</h3>
-                    <ul>
-                        <li>
-                            <strong>Cognitive Load Optimization in UI Design</strong><br>
-                            Explored methods to reduce cognitive strain in user interfaces through data-driven
-                            heuristics.<br>
-                            <em>Tech:</em> Python, Figma, SciPy<br>
-                            <a href="./pages/projects/cognitive-ui.html">View project</a>
-                        </li>
-                    </ul>
-
-                    <br>
-                    <h3>Softwares</h3>
-                    <ul>
-                        <li>
-                            <strong>Krishi-darshan</strong><br>
-                            A console-based agriculture management system for small-scale farmers.<br>
-                            <em>Tech:</em> C, Notcurses<br>
-                            <a href="./pages/projects/krishi-darshan.html">View project</a>
-                        </li>
-                    </ul>
-                    <br>
-
-                    <h3>Games</h3>
-                    <ul>
-                        <li>
-                            <strong>Ghost Runner: Terminal Protocol</strong><br>
-                            A terminal-based stealth hacking game set in a retro cyberpunk world.<br>
-                            <em>Tech:</em> Python, curses<br>
-                            <a href="./pages/projects/ghost-runner.html">View project</a>
-                        </li>
-                    </ul>
-
-                    <br>
-                    <h3>Other</h3>
-                    <ul>
-                        <li>
-                            <strong>PixelSynth</strong><br>
-                            Turns images into MIDI soundscapes based on brightness values.<br>
-                            <em>Tech:</em> Python, PIL, MIDIUtil<br>
-                            <a href="./pages/projects/pixelsynth.html">View project</a>
-                        </li>
-                        <li>
-                            <strong>ESPWeather</strong><br>
-                            A minimal weather station using an ESP8266 and e-ink display.<br>
-                            <em>Tech:</em> C++, Arduino, OpenWeatherMap API<br>
-                            <a href="./pages/projects/espweather.html">View project</a>
-                        </li>
-                    </ul>
-                </div>
-                <p>and working on more projects..</p>
-                <br>
-
-                <h2>Blogs</h2>
-                <p>Full list of my blogs can be found on the <a href="./pages/blogs-page/blogs-page.html">blog-page</a>.
-                    Most impactful ones are listed below:</p>
-
-                <ol style="margin: 5px 5%;">
-                    <li><a href="">C is all about pointers</a></li>
-                    <li><a href="">Life is a mease and not a run, figure it out or you might die</a></li>
-                    <li><a href="">Leaders are made by god, you are not a god</a></li>
-                    <li><a href="">Even if there is will, sometimes there is no way</a></li>
-                </ol>
-                <p>and writing blogs made me productive..</p>
-                <br>
-
-                <div class="interests-section">
-                    <h2>Interests</h2>
-
-                    <p>
-                        As I mentioned before, I love computers, but computers alone aren’t enough to do the things I
-                        aspire to. To solve meaningful problems and build impactful solutions, I need knowledge. Broad,
-                        interdisciplinary knowledge.
-                        <br>
-                        <br>
-                        Understanding a problem often requires insights from more than one
-                        field, and that’s what drives my curiosity. I’ve always been fascinated by a wide range of
-                        disciplines that feed into both my thinking and my creative process. Here is a shortened list of
-                        interests:
-                    </p>
-
-                    <ul style="margin: 5px 3%;">
-                        <li>Art</li>
-                        <li>Mathematics</li>
-                        <li>Physics</li>
-                        <li>Philosophy</li>
-                        <li>Neuroscience</li>
-                        <li>Astronomy</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Evolutionary biology</li>
-                        <li>Politics</li>
-                        <li>History</li>
-                        <li>Fishing</li>
-                        <li>Music</li>
-                        <li>Sticker design</li>
-                        <li>Handcrafting</li>
-                    </ul>
-                </div>
-                <p>almost everything is interesting..</p>
-
-                <br>
-                <h2>Miscellaneous</h2>
-                <p>
-                    The <a href="./pages/misc/misc.html">misc</a> page features various personal interests — including
-                    movies, anime, favorite shows, sports, images, websites, and helpful resources.
-                </p>
-
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <div style="display: flex; gap: 5px;">
-            <em>sister sites: </em>
-            <div style="display: flex; gap: 10px;">
-                <a href="">miki</a>
-                <a href="piko">piko</a>
-            </div>
-        </div>
-        <div class="bg-black year-message">
-            <p>©2025</p>
-            <p>worldisanoptimistsnightmare</p>
-        </div>
-    </footer>
-
-    <script src="app.js"></script>
-</body>
-
+    <footer></footer>
+  </body>
 </html>

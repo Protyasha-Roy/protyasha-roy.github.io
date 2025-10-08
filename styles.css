@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(245, 253, 241);
+}
+
+.profile-img img {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#homepage {
+    margin: 0.5rem;
+}
+
+#homeheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#socials-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}

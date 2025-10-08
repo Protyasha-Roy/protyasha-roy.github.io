@@ -7,13 +7,12 @@ html {
     background-color: rgb(245, 253, 241);
 }
 
-.profile-img img {
-    margin: 0 auto;
+.banner {
     width: 100%;
-    height: 100%;
+    height: 5rem;
 }
 
-#homepage {
+body {
     margin: 0.5rem;
 }
 
@@ -31,4 +30,23 @@ html {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+
+#mainContainer {
+    margin-top: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: white;
+    background-color: blue;
 }

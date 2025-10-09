@@ -1,116 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    background-color: rgb(245, 253, 241);
+  background-color: rgb(245, 253, 241);
 }
 
 .banner {
-    width: 100%;
-    height: 5rem;
-    margin-top: 1rem;
+  width: 100%;
+  height: 5rem;
+  margin-top: 1rem;
 }
 
 body {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
 
 #homeheader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #socials-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 main {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 a {
-    text-decoration: none;
-    color: blue;
+  text-decoration: none;
+  color: blue;
 }
 
 footer p {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
-
 a:hover {
-    color: white;
-    background-color: blue;
+  color: white;
+  background-color: blue;
 }
 
 footer {
-    margin-top: 1rem;
-    background-color: white;
-    border: 1px dotted;
-    text-align: right;
-    font-size: small;
+  margin-top: 1rem;
+  background-color: white;
+  border: 1px dotted;
+  text-align: right;
+  font-size: small;
 }
 
-ul li{
-    margin: 0 1.5rem;
+ul li {
+  margin: 0 1.5rem;
 }
 
 ol li {
-    margin: 0 1.5rem;
+  margin: 0 1.5rem;
 }
 
 code {
-    background-color: white;
-    border: 1px dotted;
+  background-color: white;
+  border: 1px dotted;
 }
 
-
 time {
-    font-size: small;
-    background-color: yellow;
-    font-weight: 500;
+  font-size: small;
+  background-color: yellow;
+  font-weight: 500;
 }
 
 .blog-section {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .blog-header {
-    font-size: medium;
+  font-size: medium;
 }
 
 .post-img {
-    width: 100%;
+  width: 100%;
 }
 
 figcaption {
-    font-size: small;
-    font-style: italic;
-    text-align: right;
+  font-size: small;
+  font-style: italic;
+  text-align: right;
 }
 
 .margint {
-    margin-top: 1rem;
+  margin-top: 1rem;
+}
+
+figure {
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 768px) {
-    body {
-        max-width: 700px;
-        margin: 0.5rem auto;
-    }
+  body {
+    max-width: 700px;
+    margin: 0.5rem auto;
+  }
 }

@@ -66,6 +66,16 @@ footer {
     font-size: small;
 }
 
+ul li{
+    margin: 0 1.5rem;
+}
+
+time {
+    font-size: small;
+    background-color: yellow;
+    font-weight: 500;
+}
+
 @media (min-width: 768px) {
     body {
         max-width: 700px;

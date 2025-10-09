@@ -32,15 +32,76 @@
       <article>
         <time datetime="09-10-25">9th Oct, 2025</time>
         <h1 class="blog-header">
-          How to create Omarchy like standalone desktop web-application
+          How to create Omarchy like standalone desktop web-applications
         </h1>
 
         <section class="blog-section">
-          <p>
-            In order to create standalone desktop web-applications like Omarchy, make sure you have brave browser installed.
+          <figure>
+            <img
+              class="post-img"
+              src="./web-apps.png"
+              alt="web-apps as standalone desktop applications"
+            />
+            <figcaption>Omarchy style standalone desktop web-apps</figcaption>
+          </figure>
+
+          <p class="margint">
+            You might have seen web-apps (like shown in the image above) that
+            run on the browser, but looks like standalone desktop applications.
+            I have recently discovered it, and wanted to do the same on my
+            system. But I don't use <a href="https://omarchy.org">Omarchy</a>, I
+            use Arch with DWM, and other
+            <a href="https://suckless.org">suckless</a> tools like dmenu,
+            slstatus etc.
+          </p>
+
+          <p class="margint">
+            So, how do I get this feature on my system? Well, I used ChatGPT to
+            help me with that, as I'm still learning to get around with Linux.
+            And I found out it was surprisingly easy to achieve this feature.
+            Now I will explain how I did it on my system: arch + dmenu + dwm +
+            brave;in 4 steps.
+          </p>
+
+          <div class="margint">
+            <p><strong>Step-by-step:</strong></p>
+            <ol>
+              <li>
+                Create folders:
+                <code>mkdir -p ~/.local/share/webapps/apps ~/.local/bin</code>
+              </li>
+              <li>
+                Create or put the script in:
+                <code>nvim ~/.local/bin/script-name</code>
+              </li>
+              <li>
+                Make it executable using:
+                <code>chmod +x ~/.local/bin/script-name</code>
+              </li>
+              <li>
+                Keybind with your WM. By default the script menu runs on
+                <a href="https://tools.suckless.org/dmenu">dmenu</a>.
+              </li>
+            </ol>
+          </div>
+
+          <p class="margint">
+            <strong>Troubleshooting:</strong>
+            It worked for me on my system, but might not work for others. Make
+            sure you include bin and apps directory to <strong>$PATH</strong> so that dmenu can
+            see the applications.
+          </p>
+          <p class="margint">
+            If you are using <strong>dmenu</strong>, it opens the menu to with
+            options to <strong>add</strong> or <strong>delete</strong> apps, and
+            lists the created applications. You can create applications simply
+            by typing name, url and the mode you want the session to be in(private/normal).
           </p>
         </section>
       </article>
     </main>
+    <footer>
+      <p><i>last updated: 09.10.25</i></p>
+    </footer>
   </body>
 </html>

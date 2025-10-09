@@ -70,6 +70,16 @@ ul li{
     margin: 0 1.5rem;
 }
 
+ol li {
+    margin: 0 1.5rem;
+}
+
+code {
+    background-color: white;
+    border: 1px dotted;
+}
+
+
 time {
     font-size: small;
     background-color: yellow;
@@ -82,6 +92,20 @@ time {
 
 .blog-header {
     font-size: medium;
+}
+
+.post-img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: small;
+    font-style: italic;
+    text-align: right;
+}
+
+.margint {
+    margin-top: 1rem;
 }
 
 @media (min-width: 768px) {

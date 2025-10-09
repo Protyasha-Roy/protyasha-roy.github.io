@@ -76,6 +76,14 @@ time {
     font-weight: 500;
 }
 
+.blog-section {
+    margin-top: 1rem;
+}
+
+.blog-header {
+    font-size: medium;
+}
+
 @media (min-width: 768px) {
     body {
         max-width: 700px;

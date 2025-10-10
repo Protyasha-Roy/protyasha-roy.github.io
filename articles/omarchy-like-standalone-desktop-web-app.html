@@ -19,7 +19,7 @@
       <nav>
         <a href="/">about</a>
         <a href="../articles/index.html">articles</a>
-        <a href="index.html">projects</a>
+        <a href="../projects/index.html">projects</a>
         <a href="../misc.html">misc</a>
       </nav>
       <img
@@ -64,6 +64,24 @@
           </p>
 
           <div class="margint">
+            <p><strong>Pre-requisites:</strong></p>
+            <ol>
+              <li>
+                A web browser that supports the flag <em>--app</em> (I use
+                Brave)
+              </li>
+              <li>An application launcher (the script works for dmenu)</li>
+              <li>
+                <a
+                  href="https://github.com/Protyasha-Roy/suckless-scripts/blob/main/webapp-menu"
+                  >Download the script</a
+                >
+                or copy paste the content in later steps
+              </li>
+            </ol>
+          </div>
+
+          <div class="margint">
             <p><strong>Step-by-step:</strong></p>
             <ol>
               <li>
@@ -71,35 +89,48 @@
                 <code>mkdir -p ~/.local/share/webapps/apps ~/.local/bin</code>
               </li>
               <li>
-                Create or put the script in:
-                <code>nvim ~/.local/bin/script-name</code>
+                Now put the downloaded
+                <a
+                  href="https://github.com/Protyasha-Roy/suckless-scripts/blob/main/webapp-menu"
+                  >script</a
+                >
+                in <code>~/.local/bin</code> or simply copy paste the content in the file:
+                <code>nvim ~/.local/bin/webapp-menu</code>
               </li>
               <li>
                 Make it executable using:
-                <code>chmod +x ~/.local/bin/script-name</code>
+                <code>chmod +x ~/.local/bin/webapp-menu</code>
               </li>
               <li>
-                Keybind with your WM. By default the script menu runs on
+                Keybind to run the script with your WM. By default the script menu runs on
                 <a href="https://tools.suckless.org/dmenu">dmenu</a>.
               </li>
             </ol>
           </div>
 
           <p class="margint">
-            <strong>Troubleshooting:</strong>
-            It worked for me on my system, but might not work for others. Make
-            sure you include bin and apps directory to <strong>$PATH</strong> so that dmenu can
-            see the applications.
+            That's it. Now you can add applications and it will appear in your launcher.
           </p>
+
           <p class="margint">
-            If you are using <strong>dmenu</strong>, it opens the menu to with
+            If you are using <strong>dmenu</strong>, it opens the menu with
             options to <strong>add</strong> or <strong>delete</strong> apps, and
-            lists the created applications. You can create applications simply
-            by typing name, url and the mode you want the session to be in(private/normal).
+            lists the created applications (applications also appear in default launcher-search once added from here). You can create applications simply
+            by typing name, url and the mode you want the session to be
+            in (private/normal).
+          </p>
+
+          <p class="margint">
+            <strong>Troubleshooting:</strong>
+            It worked for me on my system, but might not work for others. So you
+            might need to adjust the script according to your launcher. Make
+            sure you include bin and apps directory to <strong>$PATH</strong> so
+            that dmenu can see the applications.
           </p>
         </section>
       </article>
     </main>
+
     <footer>
       <p><i>last updated: 09.10.25</i></p>
     </footer>

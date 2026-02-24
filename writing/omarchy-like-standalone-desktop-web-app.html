@@ -1,138 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How to create standalone desktop web-apps like Omarchy</title>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body>
-    <header id="homeheader">
-      <div id="socials-container">
-        <a href="mailto:protyasharoy369@gmail.com">email</a>
-        <a href="https://x.com/zeenovex">x</a>
-        <a href="https://github.com/Protyasha-Roy">github</a>
-      </div>
 
-      <h1 style="background-color: white">Protyasha Roy</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to create standalone desktop web-apps like Omarchy</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
 
-      <nav>
-        <a href="/">about</a>
-        <a href="../writing/index.html">writing</a>
-        <a href="../work/index.html">work</a>
-        <a href="../misc.html">misc</a>
-      </nav>
-      <img
-        class="banner"
-        src="../windows.png"
-        alt="windows landscape wallpaper"
-      />
-    </header>
-    <main>
-      <article>
-        <time datetime="09-10-25">9th Oct, 2025</time>
-        <h1 class="blog-header">
-          How to create Omarchy like standalone desktop web-applications
-        </h1>
+<body>
+  <header id="homeheader">
+    <div id="socials-container">
+      <a href="mailto:protyasharoy369@gmail.com">email</a>
+      <a href="https://github.com/Protyasha-Roy">github</a>
+    </div>
 
-        <section class="blog-section">
-          <figure>
-            <img
-              class="post-img"
-              src="./web-apps.png"
-              alt="web-apps as standalone desktop applications"
-            />
-            <figcaption>Omarchy style standalone desktop web-apps</figcaption>
-          </figure>
+    <h1 style="background-color: white">Protyasha Roy</h1>
 
-          <p class="margint">
-            You might have seen web-apps (like shown in the image above) that
-            run on the browser, but looks like standalone desktop applications.
-            I have recently discovered it, and wanted to do the same on my
-            system. But I don't use <a href="https://omarchy.org">Omarchy</a>, I
-            use Arch with DWM, and other
-            <a href="https://suckless.org">suckless</a> tools like dmenu,
-            slstatus etc.
-          </p>
+    <nav>
+      <a href="/">about</a>
+      <a href="../writing/index.html">writing</a>
+      <a href="../work/index.html">work</a>
+      <a href="../misc.html">misc</a>
+    </nav>
+    <img class="banner" src="../windows.png" alt="windows landscape wallpaper" />
+  </header>
+  <main>
+    <article>
+      <time datetime="09-10-25">9th Oct, 2025</time>
+      <h1 class="blog-header">
+        How to create Omarchy like standalone desktop web-applications
+      </h1>
 
-          <p class="margint">
-            So, how do I get this feature on my system? Well, I used ChatGPT to
-            help me with that, as I'm still learning to get around with Linux.
-            And I found out it was surprisingly easy to achieve this feature.
-            Now I will explain how I did it on my system: arch + dmenu + dwm +
-            brave;in 4 steps.
-          </p>
+      <section class="blog-section">
+        <figure>
+          <img class="post-img" src="./web-apps.png" alt="web-apps as standalone desktop applications" />
+          <figcaption>Omarchy style standalone desktop web-apps</figcaption>
+        </figure>
 
-          <div class="margint">
-            <p><strong>Pre-requisites:</strong></p>
-            <ol>
-              <li>
-                A web browser that supports the flag <em>--app</em> (I use
-                Brave)
-              </li>
-              <li>An application launcher (the script works for dmenu)</li>
-              <li>
-                <a
-                  href="https://github.com/Protyasha-Roy/suckless-scripts/blob/main/webapp-menu"
-                  >Download the script</a
-                >
-                or copy paste the content in later steps
-              </li>
-            </ol>
-          </div>
+        <p class="margint">
+          You might have seen web-apps (like shown in the image above) that
+          run on the browser, but looks like standalone desktop applications.
+          I have recently discovered it, and wanted to do the same on my
+          system. But I don't use <a href="https://omarchy.org">Omarchy</a>, I
+          use Arch with DWM, and other
+          <a href="https://suckless.org">suckless</a> tools like dmenu,
+          slstatus etc.
+        </p>
 
-          <div class="margint">
-            <p><strong>Step-by-step:</strong></p>
-            <ol>
-              <li>
-                Create folders:
-                <code>mkdir -p ~/.local/share/webapps/apps ~/.local/bin</code>
-              </li>
-              <li>
-                Now put the downloaded
-                <a
-                  href="https://github.com/Protyasha-Roy/suckless-scripts/blob/main/webapp-menu"
-                  >script</a
-                >
-                in <code>~/.local/bin</code> or simply copy paste the content in the file:
-                <code>nvim ~/.local/bin/webapp-menu</code>
-              </li>
-              <li>
-                Make it executable using:
-                <code>chmod +x ~/.local/bin/webapp-menu</code>
-              </li>
-              <li>
-                Keybind to run the script with your WM. By default the script menu runs on
-                <a href="https://tools.suckless.org/dmenu">dmenu</a>.
-              </li>
-            </ol>
-          </div>
+        <p class="margint">
+          So, how do I get this feature on my system? Well, I used ChatGPT to
+          help me with that, as I'm still learning to get around with Linux.
+          And I found out it was surprisingly easy to achieve this feature.
+          Now I will explain how I did it on my system: arch + dmenu + dwm +
+          brave;in 4 steps.
+        </p>
 
-          <p class="margint">
-            That's it. Now you can add applications and it will appear in your launcher.
-          </p>
+        <div class="margint">
+          <p><strong>Pre-requisites:</strong></p>
+          <ol>
+            <li>
+              A web browser that supports the flag <em>--app</em> (I use
+              Brave)
+            </li>
+            <li>An application launcher (the script works for dmenu)</li>
+            <li>
+              <a href="https://github.com/Protyasha-Roy/suckless-scripts/blob/main/webapp-menu">Download the script</a>
+              or copy paste the content in later steps
+            </li>
+          </ol>
+        </div>
 
-          <p class="margint">
-            If you are using <strong>dmenu</strong>, it opens the menu with
-            options to <strong>add</strong> or <strong>delete</strong> apps, and
-            lists the created applications (applications also appear in default launcher-search once added from here). You can create applications simply
-            by typing name, url and the mode you want the session to be
-            in (private/normal).
-          </p>
+        <div class="margint">
+          <p><strong>Step-by-step:</strong></p>
+          <ol>
+            <li>
+              Create folders:
+              <code>mkdir -p ~/.local/share/webapps/apps ~/.local/bin</code>
+            </li>
+            <li>
+              Now put the downloaded
+              <a href="https://github.com/Protyasha-Roy/suckless-scripts/blob/main/webapp-menu">script</a>
+              in <code>~/.local/bin</code> or simply copy paste the content in the file:
+              <code>nvim ~/.local/bin/webapp-menu</code>
+            </li>
+            <li>
+              Make it executable using:
+              <code>chmod +x ~/.local/bin/webapp-menu</code>
+            </li>
+            <li>
+              Keybind to run the script with your WM. By default the script menu runs on
+              <a href="https://tools.suckless.org/dmenu">dmenu</a>.
+            </li>
+          </ol>
+        </div>
 
-          <p class="margint">
-            <strong>Troubleshooting:</strong>
-            It worked for me on my system, but might not work for others. So you
-            might need to adjust the script according to your launcher. Make
-            sure you include bin and apps directory to <strong>$PATH</strong> so
-            that dmenu can see the applications.
-          </p>
-        </section>
-      </article>
-    </main>
+        <p class="margint">
+          That's it. Now you can add applications and it will appear in your launcher.
+        </p>
 
-    <footer>
-      <p><i>last updated: 09.10.25</i></p>
-    </footer>
-  </body>
+        <p class="margint">
+          If you are using <strong>dmenu</strong>, it opens the menu with
+          options to <strong>add</strong> or <strong>delete</strong> apps, and
+          lists the created applications (applications also appear in default launcher-search once added from here). You
+          can create applications simply
+          by typing name, url and the mode you want the session to be
+          in (private/normal).
+        </p>
+
+        <p class="margint">
+          <strong>Troubleshooting:</strong>
+          It worked for me on my system, but might not work for others. So you
+          might need to adjust the script according to your launcher. Make
+          sure you include bin and apps directory to <strong>$PATH</strong> so
+          that dmenu can see the applications.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p><i>last updated: 09.10.25</i></p>
+  </footer>
+</body>
+
 </html>

@@ -20,13 +20,14 @@ body {
   left: 0;
   width: 100%;
   margin: 0;
-  font-size: 9.6rem;
+  font-size: clamp(4rem, 10vw, 9.6rem);
   font-weight: bold;
   color: #111de8;
-  letter-spacing: -6px;
+  letter-spacing: -0.04em;
   line-height: 1;
   z-index: 10;
   text-align: center;
+  white-space: nowrap;
 }
 
 .content-layout {
@@ -74,6 +75,7 @@ body {
 
 .right-col {
   flex: 1;
+  min-width: 0;
   padding-top: 40px;
 }
 
@@ -84,55 +86,64 @@ body {
   margin: 0 0 15px 0;
 }
 
+
 .links-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 15px;
+  align-items: start;
 }
 
 .link-col {
   display: flex;
   flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.link-category {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
 .category {
+  display: block;
   color: #888888;
   font-style: italic;
   font-size: 0.85rem;
-  margin: 10px 0 5px 0;
-  display: block;
+  margin: 0 0 5px 0;
 }
 
-.category:first-child {
-  margin-top: 0;
-}
-
-.link-col ul {
+.link-category ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.link-col li {
+.link-category li {
   margin-bottom: 3px;
 }
 
-.link-col a {
+.link-category a {
   text-decoration: none;
   color: #3b50a8;
   font-size: 0.85rem;
   line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
-.link-col a:hover {
+.link-category a:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 950px) {
   .site-title {
-    font-size: 10.5vw;
-    letter-spacing: -4px;
+    font-size: clamp(2.5rem, 10.5vw, 6rem);
+    letter-spacing: -0.04em;
+    white-space: nowrap;
   }
+
   .content-layout {
     padding-top: 11vw;
   }
@@ -145,19 +156,30 @@ body {
 
   .site-title {
     position: static;
-    font-size: 12vw;
-    letter-spacing: -3px;
+    display: block;
+    width: 100%;
+    font-size: clamp(1.7rem, 8.8vw, 3.5rem);
+    letter-spacing: -0.04em;
+    line-height: 1.1;
     margin-bottom: 15px;
+    white-space: nowrap;
   }
 
   .content-layout {
     flex-direction: column;
     padding-top: 0;
     align-items: center;
+    gap: 20px;
   }
 
   .left-col {
+    flex: none;
     width: 100%;
+  }
+
+  .profile-card {
+    width: 100%;
+    max-width: 450px;
   }
 
   .bio {
@@ -165,6 +187,7 @@ body {
   }
 
   .right-col {
+    flex: none;
     width: 100%;
     padding-top: 20px;
   }
@@ -175,38 +198,43 @@ body {
   }
 
   .links-grid {
-    gap: 5px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 15px;
+  }
+
+  .link-col {
+    gap: 14px;
   }
 
   .category {
     font-size: 0.75rem;
-    margin: 8px 0 4px 0;
+    margin-bottom: 4px;
   }
 
-  .link-col a {
+  .link-category a {
     font-size: 0.7rem;
   }
 
-  .link-col li {
+  .link-category li {
     margin-bottom: 5px;
   }
 }
 
 @media (max-width: 400px) {
   .site-title {
-    font-size: 13.5vw;
-    letter-spacing: -2px;
+    font-size: clamp(1.6rem, 8.8vw, 2.2rem);
+    letter-spacing: -0.04em;
   }
 
-  .link-col a {
+  .links-grid {
+    gap: 18px 12px;
+  }
+
+  .link-category a {
     font-size: 0.65rem;
   }
 
   .category {
     font-size: 0.7rem;
-  }
-
-  .links-grid {
-    gap: 2px;
   }
 }
